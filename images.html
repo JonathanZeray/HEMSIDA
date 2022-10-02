@@ -4,59 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MEDIA</title>
-    <link rel="stylesheet" href="testarCSS.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <!--Font för navbar -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen&display=swap"
       rel="stylesheet"
     />
+    <!--  Sociala medier ikoner -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Animation.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <nav>
-      <div class="container">
-        <div class="site-navbar">
+      <div class="punch-container">
+        <button class="button" id="toggleBtn">
+          <img
+            src="image/smallerRightPunch.png"
+            alt=""
+            class="punch"
+            id="punch"
+          />
+        </button>
+      </div>
+
+      <div class="mainHeading-container">
+        <div id="site-navbar" class="site-navbar">
+          <a href="index.html" class="dropMenu">HOME</a>
+          <a href="about.html" class="dropMenu">Media</a>
+        </div>
+      </div>
+      <div class="mainHeading-container">
+        <div class="hidden" id="mainHeading">
           <a href="index.html">Home</a>
           <a href="images.html">Media</a>
-          <a href="contact.html">Contact</a>
-          <a href="testar.html">Testar</a>
         </div>
       </div>
     </nav>
-    <header class="header-title"></header>
-    <h1 class="image-h1">Media</h1>
     <br />
-    <br />
+    <header>
+      <h1 class="media-h1">Media</h1>
+    </header>
     <main>
-      <div class="media-container">
+      <div class="gallery">
         <img
-          src="https://denaeford.files.wordpress.com/2015/01/frustrated.jpg"
-          class="frustrated-coder"
-          width="250"
+          src="https://media.gettyimages.com/photos/training-for-a-heavy-weight-title-fight-rocky-balboa-skips-rope-under-picture-id526898402?s=2048x2048"
+          alt="Picture of Rocky jumping rope"
         />
         <img
-          src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*"
-          class="dog"
-          width="250"
+          src="https://static.wikia.nocookie.net/rocky/images/f/f6/Rocky-balboa-still.jpeg/revision/latest?cb=20181108150012"
+          alt="Picture of Rocky after a fight from the last movie"
         />
-        <br />
+        <img
+          src="https://www.boxingnewsonline.net/bn/wp-content/uploads/2019/05/RockyBalboa.jpg"
+          alt="Picture of Rocky resting at practice"
+        />
+        <img
+          src="https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_2172,h_1222,c_crop,x_210,y_34/w_1920/v1542892574/39-5255595bf6ab8169654.jpg"
+          alt="Rocky VS Ivan Drago"
+        />
+        <img
+          src="https://i.insider.com/5656110784307665008b58fd?width=684&format=jpeg"
+          alt="Picture of Rocky VS Apollo Creed"
+        />
+        <img
+          src="https://media.gq-magazine.co.uk/photos/5d1391df976fa35ef3f396a5/master/w_1755,h_1170,c_limit/Rocky-Training-04-GQ-15Jan16_rex_b.jpg"
+          alt="Picture of Rocky Balboa running with his dog"
+        />
+      </div>
+      <br /><br />
+      <div class="youtube-trailer">
         <iframe
-          width="250"
+          width="560"
           height="315"
-          src="https://www.youtube.com/embed/jfKfPfyJRdk"
-          title="YouTube video player"
+          src="https://www.youtube.com/embed/-Hk-LYcavrw"
+          title="Video of trailer for the first Rocky Movie"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <img src="image/cat.gif" alt="" width="250" />
       </div>
     </main>
-    <footer class="image-footer">
-      <a href="index.html" class="take-me-back"
-        >Please take me back to the first page</a
-      >
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+
+    <footer>
+      <p class="lorem">Made by Jonathan Zeray</p>
+      <div class="sociala-medier-center">
+        <a href="https://www.facebook.com" target="_blank" class="fb"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com" target="_blank" class="insta"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
     </footer>
+
+    <script>
+      const heading = document.getElementById("mainHeading");
+      const btn = document.getElementById("toggleBtn");
+
+      btn.addEventListener("click", (e) => {
+        heading.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

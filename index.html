@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="A website dedicated to Rocky Balboa" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonathans hemsida</title>
-    <link rel="stylesheet" href="vecka1.css" />
+    <title>TESTAR NYTT JONATHAN</title>
+    <link rel="stylesheet" href="style.css" />
     <!-- font för headern-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,96 +26,151 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!--  Google Ikoner  -->
+    <!-- Animation.css -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
-
   <body>
-    <i class="material-icons" style="font-size: 60px; color: salmon">cloud</i>
+    <nav>
+      <div class="punch-container">
+        <button class="button" id="toggleBtn">
+          <img
+            src="image/smallerRightPunch.png"
+            alt=""
+            class="punch"
+            id="punch"
+          />
+        </button>
+      </div>
 
-    <div class="site-navbar">
-      <a href="index.html">Home</a>
-      <a href="images.html">Media</a>
-      <a href="contact.html">Contact</a>
-      <a href="testar.html">Testar</a>
-    </div>
+      <div class="mainHeading-container">
+        <div id="site-navbar" class="site-navbar">
+          <a href="index.html" class="dropMenu">HOME</a>
+          <a href="images.html" class="dropMenu">Media</a>
+        </div>
+      </div>
+      <div class="mainHeading-container">
+        <div class="hidden" id="mainHeading">
+          <a href="index.html">Home</a>
+          <a href="images.html">Media</a>
+        </div>
+      </div>
+    </nav>
     <br /><br />
     <div class="wrapper">
       <header class="site-header">
-        <h1 class="site-header-title">Jonathans Hemsida</h1>
-        <nav>
-          <!--<a href="https://www.imdb.com/title/tt0113243/" target="_blank">Link to the movie</a> 
-<br>
-<a href="images.html">Media</a> -->
-        </nav>
+        <h1 class="site-header-title">ROCKY BALBOA</h1>
       </header>
+      <main>
+        <section>
+          <h2 class="section-header">Facts about the Rocky Movies</h2>
+          <p class="synopsis">
+            The first movie in the <em> Rocky Balboa</em> franchise came out in
+            <strong>1976</strong>. <br />
+            Five more movies have been released with the latest movie in 2006.
+          </p>
 
-      <section>
-        <h2 class="section-header">Facts about my website</h2>
-        <p class="synopsis">
-          Allt handlar om det som <em> handlar om </em> det och de e de som e
-          <strong> det </strong>
-        </p>
-
-        <div class="facts-container">
-          <ul>
-            <li>I have</li>
-
-            <!--Nested list-->
+          <div class="facts-container">
             <ul>
-              <li>No idea</li>
-              <li>But i'm trying</li>
+              <li class="borderlist">All released Rocky movies</li>
+              <br />
+              <!--Nested list-->
+              <ol class="movie-list">
+                <li>
+                  <a
+                    href="https://www.imdb.com/title/tt0075148/"
+                    target="_blank"
+                    >Rocky (1976)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.imdb.com/title/tt0079817/"
+                    target="_blank"
+                    >Rocky II (1979)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.imdb.com/title/tt0084602/"
+                    target="_blank"
+                    >Rocky III (1982)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.imdb.com/title/tt0089927/"
+                    target="_blank"
+                    >Rocky IV (1985)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.imdb.com/title/tt0100507/"
+                    target="_blank"
+                    >Rocky V (1990)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.imdb.com/title/tt0479143/"
+                    target="_blank"
+                    >Rocky Balboa (2006)</a
+                  >
+                </li>
+              </ol>
             </ul>
-          </ul>
-
-          <ol>
-            <li>This presentation will</li>
-            <li>Only be 2 minutes</li>
-            <li>So none of you will be able to read this</li>
-          </ol>
-          <ul>
-            <li>I was wrong</li>
-            <li>Everyone could read it</li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <center>
+          </div>
+        </section>
+        <div class="menu-drop">
           <div class="dropdown">
-            <button class="dropbtn">Questions? Click me!</button>
+            <button class="dropbtn">Questions? Hover over me!</button>
             <div class="dropdown-content">
               <a href="https://www.google.com" target="_blank">Ask here</a>
               <a href="https://www.yahoo.com" target="_blank">Or here</a>
             </div>
           </div>
-        </center>
-        <h2>Images</h2>
-        <center>
-          <img
-            src="https://t3.ftcdn.net/jpg/02/17/76/24/360_F_217762497_IpvtjSFSqs1U4euNiTIcGkFtwtYB88ZH.jpg"
-            class="benim"
-          />
-        </center>
-      </section>
-
-      <footer>
-        <p class="lorem">Made by Jonathan Zeray</p>
-        <center>
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            class="fa fa-facebook"
-          ></a>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            class="fa fa-twitter"
-          ></a>
-        </center>
-      </footer>
+        </div>
+        <section>
+          <h2 class="h2--lower">About this project</h2>
+          <div class="about-image">
+            <p class="synopsis">
+              This website is part of my first course of FrontEnd Dev program at
+              Hyper Island. <br />
+              The website has been created with the use of HTML, CSS and
+              Javascript.
+            </p>
+            <img
+              src="https://t3.ftcdn.net/jpg/02/17/76/24/360_F_217762497_IpvtjSFSqs1U4euNiTIcGkFtwtYB88ZH.jpg"
+              class="happyCoder"
+              alt="Picture of man that is coding"
+            />
+          </div>
+        </section>
+      </main>
     </div>
+
+    <footer>
+      <p class="lorem">Made by Jonathan Zeray</p>
+      <div class="sociala-medier-center">
+        <a href="https://www.facebook.com" target="_blank" class="fb"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com" target="_blank" class="insta"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script>
+      const heading = document.getElementById("mainHeading");
+      const btn = document.getElementById("toggleBtn");
+
+      btn.addEventListener("click", (e) => {
+        heading.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
