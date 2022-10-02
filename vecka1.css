@@ -2,23 +2,22 @@
     box-sizing: border-box;
 }
 
-/*
 body {
-    background-image: url("image/background1.jpg"); 
-    background-size: cover;
-    background-position: center;
-    
-} */
-
-.material-icons {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
+    background-color: white;
+    height: 100%;
 }
+
+
+/*
+.material-icons {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+} */
 .site-header {
-    background-color: blueviolet;
+    background-color: blue;
     color: #ffffff;
-    border: 10px solid salmon;
+    border: 10px solid red;
     font-family: 'Silkscreen', cursive;
     text-align: center;
     padding: 5px 5px;
@@ -28,11 +27,12 @@ body {
 
 .site-header-title {
     font-size: 72px;
+    animation: fadeInDown 2s;
 }
 
 
 section h2 {
-    background-color: salmon;
+    background-color: red;
 }
 /* tog bort dessa gamla för de sabbade mina nav bars hovering effekter.
 nav a:hover {
@@ -47,16 +47,29 @@ nav a:visited {
 */
 .synopsis {
     color: black;
+    background-color: #e8e8e8;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 .section-header {
-    background-color: salmon;
+    background-color: red;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
 }
 
+.menu-drop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.3rem;
+  }
+
 .dropbtn {
-    background-color: salmon;
+    background-color: red;
     color: white;
     padding: 16px;
+    font-family: 'Bebas Neue', cursive;
     font-size: 16px;
     border: 1px solid black;
   }
@@ -65,6 +78,9 @@ nav a:visited {
   .dropdown {
     position: relative;
     display: inline-block;
+   /* display: flex;
+    justify-content: center; */
+
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -72,33 +88,38 @@ nav a:visited {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 172px;
     z-index: 1;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 4px 4px;
     text-decoration: none;
     display: block;
   }
   
+
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd;}
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {display: block; transition: all 3s;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: blueviolet;}
+  .dropdown:hover .dropbtn {background-color: blue;     transition:all 1s ease-in-out;
+  }
 
 
 .wrapper {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white; 
+    background-image: url(https://w0.peakpx.com/wallpaper/652/12/HD-wallpaper-rocky-balboa.jpg);
+   /* background-color: white; */
     padding-top: 1rem;
 }
 
@@ -106,24 +127,38 @@ img {
     width: 150px;
 }
 
-.benim:hover {
-    animation: rotation 6s infinite linear;
+.h2--lower {
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
+.about-image {
+    text-align: center;
 }
+
+.happyCoder:hover {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 
 .site-navbar {
-    background-color: #fff;
+    background-color: white;
     color: red;
     font-family: 'Bebas Neue', cursive;
-    font-size: 32px;
+    font-size: 2rem;
     /*text-align: center;  */
     padding-bottom: 0px;
     display: flex;
@@ -146,8 +181,8 @@ img {
 
 .site-navbar a:hover {
     text-decoration: underline;
-    text-decoration-color: salmon;
-    opacity: .5;
+    text-decoration-color: red;
+    opacity: .6;
 }
 
 .kontakt-sida {
@@ -165,31 +200,25 @@ img {
 
 
 /* Sociala medier ikoner */
-.fa {
-    padding: 5px;
-    font-size: 30px;
-    width: 20px;
+.sociala-medier-center {
     text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  
+}
 
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
+.sociala-medier-center a {
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+}
 
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
+.fb{
+    background: #1877f2 ;
+}
+.insta{
+    background: #fb3958;
+}
   
 .take-me-back {
     text-decoration: none;
@@ -203,16 +232,51 @@ img {
 .lorem {
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 em {
-    color: salmon;
+    color: red;
 }
 
 .facts-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.facts-container ul {
+    list-style: none;
+}
+
+.borderlist {
+    text-align: center;
+    border: 2px solid black;
+    border-style: inset;
+    background: white;
+}
+
+
+/* Change fontsize on the rocky imdb list */
+.movie-list {
+    font-size: 1.2rem;
+}
+
+.facts-container ul ol li a {
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    border: 0.2px solid black;
+    border-style: inset;
+    background: white;
+}
+
+.facts-container ul ol li a:hover{
+    text-decoration: underline 0.125rem;
+    text-decoration-color: salmon;
+}
+
+.facts-container ul ol li a:visited {
+    color: black;
 }
 
 
@@ -223,7 +287,85 @@ em {
     justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
+.punch-container {
+    display: flex;
+    justify-content: center;
+}
+
+.punch {
+    display: none;
+}
+
+.button {
+    background-color: white;
+    width: 80px;
+    height: 60px;
+    border: none;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.mainHeading-container a {
+    color: black;
+}
+
+.mainHeading-container a:visited {
+    color: black;
+}
+
+
+.mainHeading-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+
+/*.dropMenu {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: red;
+   } */
+
+   .media-h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-size: 4rem;
+   }
+
+
+   .youtube-trailer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    /*if I put auto-fill instead of 3, CSS Grid can decide how many columns fit the screen
+    the auto-fill will generate more columns if there is space. If u dont want this, you can use auto-fit. 
+    Auto-fit is used more than auto-fill*/
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+@media screen and (max-width: 700px) {
     .site-header {
         padding: 1px;
         margin: 1px;
@@ -237,28 +379,37 @@ em {
         display: block;
     }
 
+    .wrapper {
+        background-size: 100%;
+    }
+
+    /* Adding to see if I can create a togglemenu with boxing glove, this makes the navbar disappear */
+    .site-navbar {
+        display: none;
+    } 
+
+    .button {
+        display: block;
+    }
+
+
+    .punch {
+    display: block;
+    width: 90%;
+    height: 90%;
+    }
+
+    .punch:hover { 
+    animation: slideInLeft;  /*heartBeat eller fadeInLeft*/
+    animation-duration: 1.5s;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
     .site-navbar {
         font-size: 24px;
     }
-
-    .kontakt-sida {
-        font-size: 2.5rem;
-    }
-
 }
-
-@media screen and (max-width: 700px) {
-    .facts-container {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .material-icons {
-        position: relative;
-    }
 
  
-}
