@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: */contact/
+Disallow: */testar/
+
+Sitemap: https://incredible-palmier-f315ae.netlify.app/sitemap.xml
