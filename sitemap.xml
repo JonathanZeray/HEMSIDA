@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://incredible-palmier-f315ae.netlify.app/">
-  <url>
-    <loc>https://incredible-palmier-f315ae.netlify.app/index.html</loc>
-    <lastmod>2022-10-03</lastmod>
-  </url>
-    <url>
-    <loc>https://incredible-palmier-f315ae.netlify.app/images.html</loc>
-    <lastmod>2018-06-04</lastmod>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://incredible-palmier-f315ae.netlify.app/</loc>
+<lastmod>2022-10-03T09:57:54+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://incredible-palmier-f315ae.netlify.app/index.html</loc>
+<lastmod>2022-10-03T09:57:54+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://incredible-palmier-f315ae.netlify.app/images.html</loc>
+<lastmod>2022-10-03T09:57:54+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
