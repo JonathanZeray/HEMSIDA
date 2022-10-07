@@ -385,9 +385,10 @@ em {
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
-  /*if I put auto-fill instead of 3, CSS Grid can decide how many columns fit the screen
-    the auto-fill will generate more columns if there is space. If u dont want this, you can use auto-fit. 
-    Auto-fit is used more than auto-fill*/
+  /* 200px is the value, size of the image. If i put repeat(3, 200px) its not responsive.
+    if I put auto-fill instead of 3, CSS Grid can decide how many columns fit the screen
+    the auto-fill will generate more (empty) 200px columns if there is space. 
+    If u dont want this, you can use auto-fit. Auto-fit is used more than auto-fill*/
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   justify-content: center;
